@@ -1,0 +1,24 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-409,-205",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port AXIS_OUT -pg 1 -lvl 3 -x 490 -y 230 -defaultsOSRD
+preplace port AXIS_IN -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 90 -defaultsOSRD
+preplace port port-id_qsfp1_up -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 2 -x 370 -y 140 -defaultsOSRD
+preplace inst data_consumer -pg 1 -lvl 1 -x 130 -y 80 -defaultsOSRD
+preplace inst data_generator -pg 1 -lvl 1 -x 130 -y 220 -defaultsOSRD
+preplace netloc eth_1_stream_clk 1 0 2 10 150 NJ
+preplace netloc eth_1_stat_rx_aligned_0 1 0 1 NJ 230
+preplace netloc ETH1_TX 1 1 2 260 230 NJ
+preplace netloc ETH1_RX 1 0 2 10 10 250
+levelinfo -pg 1 -10 130 370 490
+pagesize -pg 1 -db -bbox -sgen -130 0 610 290
+"
+}
+
