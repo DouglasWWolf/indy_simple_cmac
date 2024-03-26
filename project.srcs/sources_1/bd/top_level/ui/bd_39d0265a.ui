@@ -16,8 +16,8 @@ preplace port port-id_qsfp1_up -pg 1 -lvl 3 -x 460 -y 400 -defaultsOSRD
 preplace inst eth_0 -pg 1 -lvl 2 -x 310 -y 60 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 21 24 23} -defaultsOSRD -pinDir qsfp_gt right -pinY qsfp_gt 0R -pinDir qsfp_clk right -pinY qsfp_clk 20R -pinDir axis_tx left -pinY axis_tx 0L -pinDir axis_rx left -pinY axis_rx 20L -pinDir sys_resetn left -pinY sys_resetn 60L -pinDir stream_clk left -pinY stream_clk 40L -pinDir stream_resetn right -pinY stream_resetn 60R -pinDir aligned right -pinY aligned 40R
 preplace inst eth_1 -pg 1 -lvl 2 -x 310 -y 360 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 23} -defaultsOSRD -pinDir qsfp_gt right -pinY qsfp_gt 0R -pinDir qsfp_clk right -pinY qsfp_clk 20R -pinDir axis_tx left -pinY axis_tx 0L -pinDir axis_rx left -pinY axis_rx 20L -pinDir sys_resetn left -pinY sys_resetn 40L -pinDir stream_clk left -pinY stream_clk 60L -pinDir stream_resetn right -pinY stream_resetn 60R -pinDir aligned right -pinY aligned 40R
 preplace inst one -pg 1 -lvl 1 -x 90 -y 260 -defaultsOSRD -pinBusDir dout right -pinBusY dout 0R
-preplace inst data_1 -pg 1 -lvl 1 -x 90 -y 360 -defaultsOSRD -pinDir AXIS_OUT right -pinY AXIS_OUT 0R -pinDir AXIS_IN right -pinY AXIS_IN 20R -pinDir clk right -pinY clk 60R -pinDir qsfp1_up right -pinY qsfp1_up 110R
-preplace inst data_0 -pg 1 -lvl 1 -x 90 -y 60 -defaultsOSRD -pinDir AXIS_OUT right -pinY AXIS_OUT 0R -pinDir AXIS_IN right -pinY AXIS_IN 20R -pinDir clk right -pinY clk 40R -pinDir qsfp1_up right -pinY qsfp1_up 110R
+preplace inst data_1 -pg 1 -lvl 1 -x 90 -y 360 -defaultsOSRD -pinDir AXIS_OUT right -pinY AXIS_OUT 0R -pinDir AXIS_IN right -pinY AXIS_IN 20R -pinDir clk right -pinY clk 60R -pinDir qsfp_up right -pinY qsfp_up 110R
+preplace inst data_0 -pg 1 -lvl 1 -x 90 -y 60 -defaultsOSRD -pinDir AXIS_OUT right -pinY AXIS_OUT 0R -pinDir AXIS_IN right -pinY AXIS_IN 20R -pinDir clk right -pinY clk 40R -pinDir qsfp_up right -pinY qsfp_up 110R
 preplace netloc clk_1 1 1 1 N 100
 preplace netloc eth_0_stat_rx_aligned_0 1 1 2 N 170 440
 preplace netloc eth_1_stat_rx_aligned_0 1 1 2 N 470 440

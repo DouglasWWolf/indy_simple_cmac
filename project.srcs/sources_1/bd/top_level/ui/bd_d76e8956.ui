@@ -3,7 +3,24 @@
    "Default View_ScaleFactor":"1.0",
    "Default View_TopLeft":"-407,-199",
    "DisplayTieOff":"1",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port AXIS_OUT -pg 1 -lvl 3 -x 480 -y 250 -defaultsOSRD
+preplace port AXIS_IN -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port port-id_qsfp_up -pg 1 -lvl 0 -x -10 -y 270 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 2 -x 360 -y 50 -swap {6 1 2 3 4 5 0 7 8 9 10 11 13 12} -defaultsOSRD -pinDir SLOT_0_AXIS left -pinY SLOT_0_AXIS 100L -pinDir SLOT_1_AXIS left -pinY SLOT_1_AXIS 0L -pinDir clk left -pinY clk 140L -pinDir resetn left -pinY resetn 120L
+preplace inst data_consumer -pg 1 -lvl 1 -x 130 -y 110 -defaultsOSRD -pinDir AXIS_RX left -pinY AXIS_RX 0L -pinDir clk left -pinY clk 20L
+preplace inst data_generator -pg 1 -lvl 1 -x 130 -y 250 -defaultsOSRD -pinDir AXIS_OUT right -pinY AXIS_OUT 0R -pinDir clk left -pinY clk 0L -pinDir start left -pinY start 20L
+preplace netloc eth_1_stat_rx_aligned_0 1 0 1 NJ 270
+preplace netloc eth_1_stream_clk 1 0 2 10 190 NJ
+preplace netloc ETH1_RX 1 0 2 10 50 NJ
+preplace netloc ETH1_TX 1 1 2 250 250 NJ
+levelinfo -pg 1 -10 130 360 480
+pagesize -pg 1 -db -bbox -sgen -120 -10 600 330
+",
    "No Loops_ScaleFactor":"1.0",
    "No Loops_TopLeft":"-409,-181"
 }
-
+0

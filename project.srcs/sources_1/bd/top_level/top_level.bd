@@ -752,7 +752,7 @@
             "type": "clk",
             "direction": "I"
           },
-          "qsfp1_up": {
+          "qsfp_up": {
             "direction": "I"
           }
         },
@@ -1024,7 +1024,7 @@
         "nets": {
           "eth_1_stat_rx_aligned_0": {
             "ports": [
-              "qsfp1_up",
+              "qsfp_up",
               "data_generator/start"
             ]
           },
@@ -1056,7 +1056,7 @@
             "type": "clk",
             "direction": "I"
           },
-          "qsfp1_up": {
+          "qsfp_up": {
             "direction": "I"
           }
         },
@@ -1328,7 +1328,7 @@
         "nets": {
           "eth_1_stat_rx_aligned_0": {
             "ports": [
-              "qsfp1_up",
+              "qsfp_up",
               "data_generator/start"
             ]
           },
@@ -1404,14 +1404,14 @@
         "ports": [
           "eth_0/aligned",
           "qsfp0_up",
-          "data_0/qsfp1_up"
+          "data_0/qsfp_up"
         ]
       },
       "eth_1_stat_rx_aligned_0": {
         "ports": [
           "eth_1/aligned",
           "qsfp1_up",
-          "data_1/qsfp1_up"
+          "data_1/qsfp_up"
         ]
       },
       "eth_1_stream_clk": {
